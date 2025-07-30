@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelBloom - Contact Us</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="title">&#9992; TravelBloom</div>
+        <div>
+          <ul>
+            <li><a href="./travel-recommendation.html">Home</a></li>
+            <li><a href="./about-us.html">About Us</a></li>
+            <li><a href="./contact-us.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="search">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Enter a destination or keyword"
+          />
+          <button class="search-btn" onclick="search()">Search</button>
+          <button class="clear-btn" onclick="clearResults()">Clear</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="contact-us-container">
+        <div class="left-col">
+          <div class="icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="middle-col">
+          <h1>CONTACT US</h1>
+          <p>Get in touch.</p>
+        </div>
+        <div class="right-col">
+          <div class="submit-box">
+            <div class="field">
+              <h2>Name</h2>
+              <input type="text" placeholder="Enter your name" />
+            </div>
+            <div class="field">
+              <h2>Email</h2>
+              <input type="text" placeholder="Enter your email" />
+            </div>
+            <div class="field">
+              <h2>Message</h2>
+              <textarea placeholder="Enter your message"></textarea>
+            </div>
+            <button class="submit-btn">Submit</button>
+          </div>
+        </div>
+      </div>
+      <div id="results-container"></div>
+    </main>
+    <script src="../js/travel-recommendation.js"></script>
+  </body>
+</html>

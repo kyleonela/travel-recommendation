@@ -1,0 +1,206 @@
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://cdn.pixabay.com/photo/2023/05/15/22/09/city-7996136_960_720.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.title {
+    font-size: 32px;
+    font-style: italic;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    gap: 100px;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 25px;
+    margin-right: 2rem;
+    gap: 1rem;
+}
+
+.search input {
+  flex: 1;
+  border: none;
+  border-radius: 25px;
+  padding: 0.75rem 1.5rem;
+  width: 500px;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+}
+
+.search-btn, .clear-btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.book-btn {
+    padding: 1rem 5rem;
+}
+
+main, .home-container, .about-us-container, .contact-us-container {
+    display: flex;
+    width: 100%;
+}
+
+.home-container .left-col,
+.contact-us-container .left-col {
+    width: 10%;
+}
+
+.home-container .middle-col,
+.home-container .right-col,
+.contact-us-container .middle-col,
+.contact-us-container .right-col {
+  width: 45%;
+}
+
+.home-container .middle-col,
+.contact-us-container .middle-col {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.home-container .middle-col h1 {
+    font-size: 145px;
+}
+
+.contact-us-container .middle-col h1 {
+    font-size: 100px;
+}
+
+.home-container .middle-col p,
+.contact-us-container .middle-col p {
+    font-size: 35px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+    gap: 2rem;
+    margin-left: 2rem;
+}
+
+.icons a {
+  display: block;
+  font-size: 3rem;
+  color: white;
+}
+
+.about-us-container h1 {
+    font-size: 100px;
+}
+
+.about-us-container .info p {
+    font-size: 25px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.about-us-container .middle-col {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.about-us-container .our-team .team {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us-container .our-team .team .member {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5rem;
+    border-radius: 10px;
+}
+
+.about-us-container .our-team .team .member p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.about-us-container .our-team .team .member i {
+    margin-right: 12px;
+}
+
+.about-us-container .our-team .team .member span {
+    display: inline-block;
+    padding: 1rem 5rem;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+.contact-us-container .right-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us-container .right-col input {
+    width: 800px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.contact-us-container .right-col textarea { 
+    width: 800px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.contact-us-container .right-col .submit-btn {
+    margin-top: 2rem;
+    width: 805px;
+}
+
+.result-item {
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.result-item img {
+  width: 400px;
+  border-radius: 10px;
+}
